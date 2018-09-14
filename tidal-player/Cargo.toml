@@ -1,0 +1,31 @@
+[package]
+name = "tidal_player"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "tidal_player"
+
+[features]
+default = [
+]
+
+#[profile.dev]
+#panic = "abort"
+#
+## See more: https://github.com/johnthagen/min-sized-rust/blob/main/no_std/Cargo.toml
+#[profile.release]
+#opt-level = "z"     # Optimize for size.
+#lto = true          # Enable Link Time Optimization
+#codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+#panic = "abort"     # Abort on panic
+#strip = true        # Automatically strip symbols from the binary.
+
+[dependencies]
+winit = "0.28"
+env_logger = "0.10"
+wgpu = { workspace = true }
+tidal_core = { path = "../tidal-core" }
+uuid = { workspace = true, features = ["serde", "v4", "fast-rng", "macro-diagnostics"] }
+pollster = "0.3"
+bytemuck = { version = "1.14", features = ["derive"] }

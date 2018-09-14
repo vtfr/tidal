@@ -1,0 +1,19 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "operator": "Scene",
+        "inputs": [
+          {
+            "type": "Connection",
+            "value": []
+          }
+        ],
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ]
+  }
+}

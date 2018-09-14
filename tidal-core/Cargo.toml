@@ -1,0 +1,24 @@
+[package]
+name = "tidal_core"
+version.workspace = true
+edition.workspace = true
+
+[features]
+default = []
+
+[dependencies]
+winit = "0.28"
+env_logger = "0.10"
+log = "0.4"
+cgmath = { version = "0.18.0", features = ["serde"] }
+wgpu = { workspace = true }
+serde = { workspace = true, features = ["rc"] }
+uuid = { workspace = true, features = ["serde", "v4", "fast-rng", "macro-diagnostics"] }
+derive_more = { workspace = true }
+delegate = { workspace = true }
+lazy_static = "1.4.0"
+bytemuck = { workspace = true }
+tidal_core_derive = { path = "derive" }
+thiserror.workspace = true
+inventory = "0.3.14"
+serde_json = "1.0.111"

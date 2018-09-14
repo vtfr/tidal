@@ -1,0 +1,16 @@
+[package]
+name = "tidal_core_derive"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[lib]
+name = "tidal_core_derive"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.38", features = ["extra-traits"] }
+quote = "1.0.33"
+proc-macro2 = "1.0.69"
+convert_case = "0.6.0"

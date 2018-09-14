@@ -1,0 +1,28 @@
+[package]
+name = "tidal_editor"
+version.workspace = true
+edition.workspace = true
+
+# Internal dependencies
+[dependencies]
+tidal_core = { path = "../tidal-core" }
+eframe = { version = "0.23.0", features = ["wgpu", "serde", "persistence"] }
+derive_more = "0.99.17"
+notify = "6.0.0"
+lazy_static = "1.4.0"
+hex-literal = "0.4.1"
+thiserror = "1.0.40"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+delegate = { workspace = true }
+bytemuck = { workspace = true }
+static_assertions = "1.1"
+serde_json = "1.0.111"
+rfd = "0.12.1"
+
+[dependencies.uuid]
+version = "1.3.3"
+features = ["v4",
+    "fast-rng",
+    "macro-diagnostics",
+    "serde"]
