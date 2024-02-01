@@ -29,3 +29,5 @@ tidal_core = { path = "../tidal-core" }
 uuid = { workspace = true, features = ["serde", "v4", "fast-rng", "macro-diagnostics"] }
 pollster = "0.3"
 bytemuck = { version = "1.14", features = ["derive"] }
+erased-serde = "0.4.2"
+serde.workspace = true

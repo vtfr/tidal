@@ -8,11 +8,11 @@ use eframe::egui::{
 };
 use eframe::epaint::{CircleShape, RectShape};
 
-use tidal_core::graph::node::InputState;
 use tidal_core::graph::PortId;
 use tidal_core::graph::{
     DataType, Graph, InputMetadata, Metadata, Node, NodeId, NodePortId, Placement,
 };
+use tidal_core::operator::input::InputState;
 
 use crate::drag::MinimumDrag;
 use crate::node_editor::node_editor_state::{

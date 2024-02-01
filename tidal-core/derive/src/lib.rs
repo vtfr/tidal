@@ -1,8 +1,5 @@
 #![feature(proc_macro_quote)]
 
-use proc_macro2::{Ident, TokenStream};
-use quote::quote;
-use syn::spanned::Spanned;
 use syn::{parse_macro_input, Data, DeriveInput, Error, ItemFn};
 
 use crate::evaluator_attributes::EvaluatorAttributes;

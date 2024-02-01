@@ -11,8 +11,9 @@ use eframe::egui::{
 };
 
 use tidal_core::cgmath::Vector3;
-use tidal_core::graph::node::{Constant, InputState};
+use tidal_core::graph::node::Constant;
 use tidal_core::graph::{Graph, Metadata, Node, NodeId, NodePortId, PortId};
+use tidal_core::operator::input::InputState;
 
 use crate::state::graph::GraphCommand;
 use crate::state::store::Store;
